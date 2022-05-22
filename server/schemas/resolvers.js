@@ -44,13 +44,13 @@ const resolvers = {
       if (context.user) {
         const book = await { ...args, username: context.user.username };
 
-        await User.findByIdAndUpdate(
+        const newBookList = await User.findByIdAndUpdate(
           { _id: context.user._id },
-          { $push: { savedBooks: book.bookId } },
+          { $push: { savedBooks: book } },
           { new: true }
         );
 
-        return book;
+        return newBookList;
       }
 
       throw new AuthenticationError('You need to be logged in!');
