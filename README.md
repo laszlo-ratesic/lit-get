@@ -1,10 +1,10 @@
-# Getlit
+# Getlit 📚
 
 A GraphQL Book search engine built on the Google Books API.
 
 ## 📚 Table of Contents
 
-- [GetLit 🧊](#getlit-)
+- [GetLit 📚](#getlit-)
   - [📚 Table of Contents](#-table-of-contents)
   - [🧾 Features](#-features)
   - [📖 Developer Journey](#-developer-journey)
